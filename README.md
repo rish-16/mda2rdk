@@ -4,6 +4,18 @@ Python library for molecule interchangeability between RDKit Mol and MDAnalysis 
 ## Why?
 RDKit and MDAnalysis are two popular libraries to manipulate molecular objects. However, there is no support for interoperability between the two libraries and their data representations, `Mol` and `Universe` respectively. `mda2rdk` is a library to convert molecules between these representations easily.
 
+## Dependencies
+
+You can create a new [`conda`](https://docs.conda.io/projects/miniconda/en/latest/) environment to install dependencies:
+
+```bash
+conda create -c conda-forge -n mda2rdk rdkit
+conda activate mda2rdk
+conda config --add channels conda-forge
+conda install mdanalysis
+conda install MDAnalysisTests
+```
+
 ## Installation
 
 You can install `mda2rdk` via `pip`:
